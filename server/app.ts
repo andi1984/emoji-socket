@@ -23,13 +23,6 @@ wss.on("connection", function connection(client: WebSocket) {
 // Express server for static client
 
 const app = express();
-const staticPort = 8080;
-
-app.use("/static", express.static(path.resolve(__dirname, "..", "client")));
-
-app.get("/", (req: Request, res: Response) => {
-  res.sendFile(path.resolve(__dirname, "..", "client", "index.html"));
-});
 
 app.post("/ws", (req: Request, res: Response) => {
   //code to perform particular action.
@@ -37,8 +30,4 @@ app.post("/ws", (req: Request, res: Response) => {
   res.json({
     ws: `${process.env.WEBSOCKET_PROTOCOL}://${process.env.URL}:${process.env.WEBSOCKET_PORT}`,
   });
-});
-
-app.listen(staticPort, () => {
-  console.log(`Static website istening at http://localhost:${staticPort}`);
 });
