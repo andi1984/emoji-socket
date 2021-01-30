@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 300%;
+      }
+
+      fieldset {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      button {
+        font-size: inherit;
+      }
+
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Emojis</legend>
+      <button type="button" value="😂">😂</button>
+      <button type="button" value="🐒">🐒</button>
+      <button type="button" value="😘">😘</button>
+      <button type="button" value="😋">😋</button>
+      <button type="button" value="🙃">🙃</button>
+    </fieldset>
+    <main class="overlay">
+      <ol class="messages" data-js="messages"></ol>
+    </main>
+    <canvas id="canvas">Foo</canvas>
+
+    <script src="./ws-connect.js"></script>
+  </body>
+</html>
