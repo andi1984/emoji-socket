@@ -9,7 +9,8 @@
     "tsc:watch": "tsc --watch",
     "node:watch": "nodemon app.js",
     "node:run": "node app.js",
-    "build": "npm run tsc:build && npm run node:run",
+    "build": "npm run tsc:build",
+    "start": " npm run node:run",
     "dev": "npm run build"
   },
   "author": "",

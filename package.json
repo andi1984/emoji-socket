@@ -1,0 +1,27 @@
+{
+  "name": "emojisocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client:dev": "cd client && npm run dev",
+    "server:dev": "cd server && npm run dev",
+    "server:start": "cd server && npm run start",
+    "build": "npm run client:dev && npm run server:dev",
+    "dev": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andi1984/emoji-socket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andi1984/emoji-socket/issues"
+  },
+  "homepage": "https://github.com/andi1984/emoji-socket#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
