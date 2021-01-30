@@ -11,9 +11,5 @@
     "dev": "npm run build"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^4.1.3"
-  },
-  "dependencies": {}
+  "license": "ISC"
 }
