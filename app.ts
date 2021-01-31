@@ -1,5 +1,5 @@
-import WebSocket from "../node_modules/@types/ws";
-import { Request, Response } from "../node_modules/@types/express";
+import WebSocket from "./node_modules/@types/ws";
+import { Request, Response } from "./node_modules/@types/express";
 
 const ws = require("ws");
 const express = require("express");
